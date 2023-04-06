@@ -7,7 +7,7 @@ import 'package:http/http.dart' as http;
 
 
 class ProductRepository {
-  static const String _baseUrl = "https://fakestoreapi.com/"; // Replace with your API URL
+  static const String _baseUrl = "https://fakestoreapi.com/"; // Mock api
 
   Future<List<Product>> getAllProducts() async {
     try {

@@ -20,8 +20,8 @@ class Product extends Equatable {
     required this.category,
     required this.imageUrl,
     required this.price,
-    required this.isRecommended,
-    required this.isPopular,
+    required this.isRecommended,//not present in mockapi
+    required this.isPopular,//not present in mockapi
     this.description,
     this.type,
     required this.rating

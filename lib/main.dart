@@ -8,8 +8,6 @@ import 'package:thriftly/blocs/wishlist/wishlist_bloc.dart';
 import 'package:thriftly/config/app_route.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:firebase_core/firebase_core.dart';
-import 'package:thriftly/product_Api/bloc/product_bloc.dart';
-import 'package:thriftly/product_Api/productrepo.dart';
 import 'package:thriftly/repositories/category/category_repository.dart';
 import 'package:thriftly/repositories/product/product_repository.dart';
 import 'package:thriftly/screens/homescreen/home_screen.dart';
@@ -44,10 +42,7 @@ class MyApp extends StatelessWidget {
           create: (_) => ProductBloc(productRepository: ProductRepository())
             ..add(LoadProducts()),
         ),
-        BlocProvider(
-          create: (_) => ProductBlocApi(productRepositoryapi: ProductRepositoryImpl(baseUrl: 'https://fakestoreapi.com/'))
-            ..add(LoadProductsApi()),
-        ),
+
         BlocProvider(create: (_) => CategoryBloc(categoryRepository:CategoryRepository())..add(LoadCategories())),
       ],
 

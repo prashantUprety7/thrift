@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:thriftly/widgets/Custom_Appbar.dart';
 import 'message_Service.dart';
 import 'messagemodel.dart';
 
@@ -27,8 +28,8 @@ class _ChatScreenState extends State<ChatScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Chat with Seller'),
+      appBar: CustomAppBar(
+        title:'Chat with Seller',
       ),
       body: Column(
         children: [

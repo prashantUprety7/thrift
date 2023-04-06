@@ -69,7 +69,7 @@ class product_card extends StatelessWidget {
                     children: [
                       Text(
                         products.name,
-                        style:GoogleFonts.aBeeZee(textStyle:TextStyle(
+                        style:GoogleFonts.aBeeZee(textStyle:const TextStyle(
                           fontSize: 23,
 
                           fontWeight: FontWeight.bold,
@@ -83,7 +83,7 @@ class product_card extends StatelessWidget {
                           Text(
                             'Condition : ',
                             style:
-                            GoogleFonts.aBeeZee(textStyle:TextStyle(
+                            GoogleFonts.aBeeZee(textStyle:const TextStyle(
                               fontSize: 16,
                               fontFamily: 'Roboto',
                               fontWeight: FontWeight.bold,
@@ -91,7 +91,7 @@ class product_card extends StatelessWidget {
                           ),
                           Text(
                             'New',
-                            style: GoogleFonts.aBeeZee(textStyle:TextStyle(
+                            style: GoogleFonts.aBeeZee(textStyle:const TextStyle(
                                 fontSize: 16,
                                 fontFamily: 'Roboto',
                                 fontWeight: FontWeight.w400,

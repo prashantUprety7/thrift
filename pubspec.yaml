@@ -110,15 +110,11 @@ flutter:
   # list giving the asset and other descriptors for the font. For
   # example:
 
-     - family: Roboto
-       fonts:
-         - asset: assets/Roboto-Thin.ttf
+
 
   #       - asset: fonts/Schyler-Italic.ttf
   #         style: italic
-     - family: RobotoM
-       fonts:
-         - asset: fonts/Roboto-Medium.ttf
+
   #       - asset: fonts/TrajanPro_Bold.ttf
   #         weight: 700
   #
