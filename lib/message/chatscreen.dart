@@ -82,7 +82,7 @@ class _ChatScreenState extends State<ChatScreen> {
                       await _apiService.sendMessage(
                         senderId: 1,
                         receiverId: widget.receiverId,
-                        message: _messageController.text,// replace this with the authenticated user's ID
+                        message: _messageController.text,
                       );
                       _messageController.clear();
                       setState(() {
